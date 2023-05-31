@@ -7,8 +7,6 @@
 ### image
 
 
-![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/image.jpg?raw=true)
-
 
 From options select 
 ```sh 
