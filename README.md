@@ -7,7 +7,7 @@
 ### image
 
 
-![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss1.png?raw=true)
+![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/tree/development/ss1.png?raw=true)
 
 
 From options select 
