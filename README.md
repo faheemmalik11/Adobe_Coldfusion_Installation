@@ -6,7 +6,10 @@
 
 ### image
 
-From options select '''sh Adobe ColdFusion (2021 release)'''
+From options select 
+```sh 
+Adobe ColdFusion (2021 release)
+```
 And then click on the blue download button 
 
 Then logged In into the user (using google or create a new account).
