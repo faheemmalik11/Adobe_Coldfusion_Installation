@@ -8,7 +8,6 @@
 	
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss1.png?raw=true)
 
-![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss1.png?raw=true)
 
 
 From options select 
@@ -25,6 +24,7 @@ linux - GUI | English | 1.57GB
 ```
 ### image2
 
+![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss2.png?raw=true)
 
 The download will start shortly.
 
@@ -38,6 +38,8 @@ chmod +x ColdFusion_2023_GUI_WWEJ_linux64.bin
 Then the dialog box will open.
 
 ### image3
+![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss3.png?raw=true)
+
 select 30-day trial option
 
 
