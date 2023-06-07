@@ -44,23 +44,33 @@ select 30-day trial option
 
 
 ### image4
+![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss4.png?raw=true)
+
 OR
 
 ### image5
+![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss5.png?raw=true)
 
 
 ### image6
+![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss6.png?raw=true)
 
 ### image7
+![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss7.png?raw=true)
 
 ### image8
+![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss8.png?raw=true)
 
 ### image9
+![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss9.png?raw=true)
+
 Password : Adobe@11
 
 (* Don’t change the username and remember the given admin username and password)
 
 ### image10
+![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss10.png?raw=true)
+
 Don’t make any changes
 
 
@@ -84,6 +94,7 @@ If link is not working then please remove index.cfm from the link
 And enter the login credentials that you have given during setup.
 And this screen will appear: 
 ### image11
+![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss11.png?raw=true)
 
 
 To add new file in wwwroot give permission to the root(wwwroot)
@@ -117,6 +128,7 @@ sudo apt install mysql-server
 
 A Popup show for password (passowrd:Adobe@11)
 ### image12
+![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss12.png?raw=true)
 
 Step 4: Ensure that the server is running using the systemctl start command:
 
@@ -136,6 +148,7 @@ STRONG Length >= 8, numeric, mixed case, special characters and dictionary   	]
 
 
 ### image13
+![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss13.png?raw=true)
 
 (there is a error, while running in this command)
 For this error: 
@@ -159,11 +172,13 @@ Run the security script
 (remember the password that you have given will installation).
 Then the mysql will install and return a success message.
 ### image14
+![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss14.png?raw=true)
 
 
 
 If there is a issue with this open cli for mysql
 ### image15
+![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss15.png?raw=true)
 
 Then error will be:ERROR 1698 (28000): Access denied for user 'root'@'localhost'
 Then run these commands.
@@ -193,23 +208,27 @@ sudo service mysql restart
 
 If there is a issue like.ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
 ### image16
+![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss16.png?raw=true)
 
 Then run this command :
 ```sh
 sudo mysql -u root -p
 ```
 ### image17
+![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss17.png?raw=true)
 
 Then install Workbench from the store For GUI interface .
 Then Edit connection.
 
 
 ### image18
+![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss18.png?raw=true)
 
 First in the password Store in keychain enter your root user password .
 If there is a error like :
 
 ### image19
+![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss19.png?raw=true)
 
 Then run this command :
 You need to enter a command to allow this package to access the service. The command is:
@@ -223,6 +242,7 @@ There will be a success massage:
 
 
 ### image20
+![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss20.png?raw=true)
 
 ### Mysql Workbench
 
@@ -253,6 +273,7 @@ wget -qO- https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
 This command show response with OK.
 
 ### image21
+![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss21.png?raw=true)
 
 Register the SQL Server Ubuntu repository:
 
@@ -262,6 +283,7 @@ sudo add-apt-repository "$(wget -qO- https://packages.microsoft.com/config/ubunt
 
 
 ### image22
+![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss22.png?raw=true)
 
 Run the following commands to install SQL Server:
 ```sh
@@ -274,6 +296,7 @@ sudo apt-get install -y mssql-server
 
 
 ### image23
+![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss23.png?raw=true)
 
 After the package installation finishes, add passwords.
 ```sh
@@ -281,6 +304,7 @@ sudo /opt/mssql/bin/mssql-conf setup
 ```
 
 ### image24
+![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss24.png?raw=true)
 
 Add 2 for developer package.
 Then add password for mssql server.
@@ -291,6 +315,7 @@ systemctl status mssql-server --no-pager
 ```
 
 ### image25
+![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss25.png?raw=true)
 
 Install the SQL Server command-line tools
 
@@ -306,6 +331,7 @@ sudo apt install curl
  
 
 ### image26
+![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss26.png?raw=true)
 
 Import the public repository GPG keys.
 ```sh
@@ -314,6 +340,7 @@ curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
 
 
 ### image27
+![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss27.png?raw=true)
 
 Register the Ubuntu repository.
 ```sh
@@ -331,6 +358,7 @@ sudo apt-get install mssql-tools unixodbc-dev
 ```
 
 ### image28
+![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss28.png?raw=true)
 
 You can update to the latest version of mssql-tools using the following commands:
 
@@ -400,6 +428,7 @@ sqlcmd -S localhost -U SA -Q "BACKUP DATABASE ncdev2 TO DISK = N'/var/opt/mssql/
 sqlcmd -S localhost -U SA -P 'Adobe@11'-Q "BACKUP DATABASE ncdev2 TO DISK = N'/var/opt/mssql/data/ncdev2.bak' WITH NOFORMAT, NOINIT, NAME = 'demodb-full', SKIP, NOREWIND, NOUNLOAD, STATS = 10"
 ```
 ### image29
+![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss29.png?raw=true)
 
 ### For Restore Database:
 
@@ -484,10 +513,12 @@ SELECT Name from sys.databases;
 next step is to connect datasource ko database in coldfusion administrator
 
 ### image30
+![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss30.png?raw=true)
 
 Add data source name add select the database.
 Then press the add button.
 ### image31
+![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss31.png?raw=true)
 
 
 
@@ -500,6 +531,7 @@ Username: SA
 Password: Adobe@11 
 
 ### image32
+![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss32.png?raw=true)
 
 
 ### MYSQL SERVER
@@ -521,20 +553,25 @@ SELECT Name from sys.databases;
 
 next step is to connect datasource ko database in coldfusion administrator
 ### image33
+![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss33.png?raw=true)
 
 select MySQL in Driver and click on add
 ### image34
+![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss34.png?raw=true)
 
 complete all fields using username, severe, port from MySQL workbench
 ### image35
+![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss35.png?raw=true)
  
 in work bench right click on user and then click on edit ,a dialog box will open from where you get all required details
 ### image36
+![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss36.png?raw=true)
 
 Password : use password that was used to create Mysql setup 
 
 ### ERROR BY YOUR LUCK 
 ### image37
+![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss37.png?raw=true)
 
 Solution:
 
