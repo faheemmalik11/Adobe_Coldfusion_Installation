@@ -16,7 +16,7 @@ Adobe ColdFusion (2021 release)
 ```
 And then click on the blue download button 
 
-Then logged In into the user (using google or create a new account).
+Then logged In (using google or create a new account).
 
 Then download the new package by filling the form at the last of the form select 
 ```sh
