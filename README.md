@@ -14,7 +14,7 @@
 ### ADOBE COLDFUSION INSTALLATION
 
 ### To install Coldfusion in Ubuntu first go to this site.
-#### image 1
+#### Image 1
 
 [https://helpx.adobe.com/coldfusion/kb/coldfusion-downloads.html](https://helpx.adobe.com/coldfusion/kb/coldfusion-downloads.html)
 
@@ -35,7 +35,7 @@ Then download the new package by filling the form and at the last of the form se
 ```sh
 linux - GUI | English | 1.57GB
 ```
-#### image 2
+#### Image 2
 
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss2.png?raw=true)
 
@@ -50,36 +50,36 @@ chmod +x ColdFusion_2023_GUI_WWEJ_linux64.bin
 
 Then the dialog box will open.
 select options as mentioned in images
-#### image 3
+#### Image 3
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss3.png?raw=true)
 
 select 30-day trial option
 
-#### image 4
+#### Image 4
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss4.png?raw=true)
 
 OR
 
-#### image 5
+#### Image 5
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss5.png?raw=true)
 
-#### image 6
+#### Image 6
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss6.png?raw=true)
 
-#### image 7
+#### Image 7
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss7.png?raw=true)
 
-#### image 8
+#### Image 8
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss8.png?raw=true)
 
-#### image 9
+#### Image 9
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss9.png?raw=true)
 
 Password : Adobe@11
 
 (* Don’t change the username and remember the given admin username and password)
 
-#### image 10
+#### Image 10
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss10.png?raw=true)
 
 
@@ -103,7 +103,7 @@ If link is not working then please remove index.cfm from the link
 Enter the login credentials that you have given during setup.
 And this screen will appear: 
 
-#### image 11
+#### Image 11
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss11.png?raw=true)
 
 
@@ -140,7 +140,7 @@ sudo apt install mysql-server
 
 A Popup show for password (passowrd:Adobe@11)
 
-#### image 12
+#### Image 12
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss12.png?raw=true)
 
 Step 4: Ensure that the server is running using the systemctl start command:
@@ -160,7 +160,7 @@ MEDIUM Length >= 8, numeric, mixed case, and special characters
 STRONG Length >= 8, numeric, mixed case, special characters and dictionary   	]
 
 
-#### image 13
+#### Image 13
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss13.png?raw=true)
 
 (there is a error, while running in this command)
@@ -184,14 +184,14 @@ Run the security script
 (remember the password that you have given will installation).
 Then the mysql will install and return a success message.
 
-#### image 14
+#### Image 14
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss14.png?raw=true)
 
 
 
 If there is a issue with this, open cli for mysql
 
-#### image 15
+#### Image 15
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss15.png?raw=true)
 
 Then error will be:ERROR 1698 (28000): Access denied for user 'root'@'localhost'
@@ -223,27 +223,27 @@ sudo service mysql restart
 
 If there is a issue like.ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
 
-#### image 16
+#### Image 16
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss16.png?raw=true)
 
 Then run this command :
 ```sh
 sudo mysql -u root -p
 ```
-#### image 17
+#### Image 17
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss17.png?raw=true)
 
 Then install Workbench from the store For GUI interface .
 Then Edit connection.
 
 
-#### image 18
+#### Image 18
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss18.png?raw=true)
 
 First in password field enter your root user password .
 If there is a error like :
 
-#### image 19
+#### Image 19
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss19.png?raw=true)
 
 Then run this command :
@@ -257,7 +257,7 @@ Then press the test Connection button in footer
 There will be a success massage:
 
 
-#### image 20
+#### Image 20
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss20.png?raw=true)
 
 
@@ -287,7 +287,7 @@ wget -qO- https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
 
 This command show response with OK.
 
-#### image 21
+#### Image 21
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss21.png?raw=true)
 
 Register the SQL Server Ubuntu repository:
@@ -297,7 +297,7 @@ sudo add-apt-repository "$(wget -qO- https://packages.microsoft.com/config/ubunt
 ```
 
 
-#### image 22
+#### Image 22
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss22.png?raw=true)
 
 Run the following commands to install SQL Server:
@@ -309,7 +309,7 @@ sudo apt-get update
 sudo apt-get install -y mssql-server
 ```
 
-#### image 23
+#### Image 23
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss23.png?raw=true)
 
 After the package installation finishes, add passwords.
@@ -317,7 +317,7 @@ After the package installation finishes, add passwords.
 sudo /opt/mssql/bin/mssql-conf setup
 ```
 
-#### image 24
+#### Image 24
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss24.png?raw=true)
 
 Add 2 for developer package.
@@ -328,7 +328,7 @@ Once the configuration is done, verify that the service is running:
 systemctl status mssql-server --no-pager
 ```
 
-#### image 25
+#### Image 25
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss25.png?raw=true)
 
 
@@ -343,7 +343,7 @@ sudo apt install curl
 ```
  
 
-#### image 26
+#### Image 26
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss26.png?raw=true)
 
 Import the public repository GPG keys.
@@ -352,7 +352,7 @@ curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
 ```
 
 
-#### image 27
+#### Image 27
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss27.png?raw=true)
 
 Register the Ubuntu repository.
@@ -370,7 +370,7 @@ sudo apt-get update
 sudo apt-get install mssql-tools unixodbc-dev
 ```
 
-#### image 28
+#### Image 28
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss28.png?raw=true)
 
 You can update to the latest version of mssql-tools using the following commands:
@@ -455,13 +455,13 @@ SELECT Name from sys.databases;
 
 next step is to connect datasource to database in coldfusion administrator
 
-#### image 29
+#### Image 29
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss30.png?raw=true)
 
 Add data source name add select the database.
 Then press the add button.
 
-#### image 30
+#### Image 30
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss31.png?raw=true)
 
 
@@ -475,7 +475,7 @@ server:locahost
 Username: SA
 Password: Adobe@11 
 
-#### image 31
+#### Image 31
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss32.png?raw=true)
 
 
@@ -498,29 +498,29 @@ SELECT Name from sys.databases;
 
 next step is to connect datasource to database in coldfusion administrator
 
-#### image 32
+#### Image 32
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss33.png?raw=true)
 
 select MySQL in Driver and click on add
 
-#### image 33
+#### Image 33
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss34.png?raw=true)
 
 complete all fields using username, severe, port from MySQL workbench
 
-#### image 34
+#### Image 34
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss35.png?raw=true)
  
 In work bench right click on user and then click on edit ,a dialog box will open from where you get all required details
 
-#### image 35
+#### Image 35
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss36.png?raw=true)
 
 Password : use password that was used to create MYsql setup 
 
 ### ERROR BY YOUR LUCK 
 
-#### image 36
+#### Image 36
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss37.png?raw=true)
 
 Solution:
@@ -564,7 +564,7 @@ sqlcmd -S localhost -U SA -Q "BACKUP DATABASE ncdev2 TO DISK = N'/var/opt/mssql/
 ```sh
 sqlcmd -S localhost -U SA -P 'Adobe@11'-Q "BACKUP DATABASE ncdev2 TO DISK = N'/var/opt/mssql/data/ncdev2.bak' WITH NOFORMAT, NOINIT, NAME = 'demodb-full', SKIP, NOREWIND, NOUNLOAD, STATS = 10"
 ```
-#### image 37
+#### Image 37
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss29.png?raw=true)
 
 ### To Restore Database:
