@@ -1,6 +1,7 @@
 # Adobe_Coldfusion_Installation
 
 ### To install Coldfusion in Ubuntu first go to this site.
+### image 1
 
 [https://helpx.adobe.com/coldfusion/kb/coldfusion-downloads.html](https://helpx.adobe.com/coldfusion/kb/coldfusion-downloads.html)
 
@@ -21,6 +22,7 @@ Then download the new package by filling the form and at the last of the form se
 ```sh
 linux - GUI | English | 1.57GB
 ```
+### image 2
 
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss2.png?raw=true)
 
@@ -35,35 +37,33 @@ chmod +x ColdFusion_2023_GUI_WWEJ_linux64.bin
 
 Then the dialog box will open.
 select options as mentioned in images
-
+### image 3
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss3.png?raw=true)
 
 select 30-day trial option
 
-
+### image 4
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss4.png?raw=true)
 
 OR
-
+### image 5
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss5.png?raw=true)
 
-
+### image 6
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss6.png?raw=true)
-
+### image 7
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss7.png?raw=true)
-
+### image 8
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss8.png?raw=true)
-
+### image 9
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss9.png?raw=true)
 
 Password : Adobe@11
 
 (* Don’t change the username and remember the given admin username and password)
 
-### image10
+### image 10
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss10.png?raw=true)
-
-Don’t make any changes
 
 
 After complete installation then go to this folder :
@@ -83,9 +83,9 @@ Check for server response by this path:
 
 If link is not working then please remove index.cfm from the link
 
-And enter the login credentials that you have given during setup.
+Enter the login credentials that you have given during setup.
 And this screen will appear: 
-### image11
+### image 11
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss11.png?raw=true)
 
 
