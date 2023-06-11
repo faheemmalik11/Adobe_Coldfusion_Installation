@@ -1,4 +1,4 @@
-# Adobe_Coldfusion_Installation
+# Adobe Coldfusion Installation
 
 ### To install Coldfusion in Ubuntu first go to this site.
 ### image 1
@@ -99,16 +99,18 @@ command:
 sudo chmod 777 wwwroot/
 ```
 
-#MySql & MsSql Setup Document 
-##MySQL Setup
+# MySql & MsSql Setup 
 
+###  MySQL Setup
+
+You can follow this link or can follow the intructions mentioned below:
 [https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04)
 
 Step 1: Open up the terminal and execute the following command:
 ```sh
 sudo apt update
 ```
-Step 2: Supply your password and wait for the update to finish. Next, run the following command:
+Step 2: enter your password and wait for the update to finish. Next, run the following command:
 ```sh
 y
 ```
@@ -119,7 +121,8 @@ sudo apt install mysql-server
 ```
 
 A Popup show for password (passowrd:Adobe@11)
-### image12
+
+### image 12
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss12.png?raw=true)
 
 Step 4: Ensure that the server is running using the systemctl start command:
@@ -139,12 +142,11 @@ MEDIUM Length >= 8, numeric, mixed case, and special characters
 STRONG Length >= 8, numeric, mixed case, special characters and dictionary   	]
 
 
-### image13
+### image 13
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss13.png?raw=true)
 
 (there is a error, while running in this command)
-For this error: 
-Follow these steps:
+For this error follow these steps:
 First, open up the new terminal then open MySQL prompt:
 ```sh
 sudo mysql
@@ -163,17 +165,19 @@ Run the security script
 
 (remember the password that you have given will installation).
 Then the mysql will install and return a success message.
-### image14
+
+### image 14
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss14.png?raw=true)
 
 
 
-If there is a issue with this open cli for mysql
-### image15
+If there is a issue with this, open cli for mysql
+### image 15
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss15.png?raw=true)
 
 Then error will be:ERROR 1698 (28000): Access denied for user 'root'@'localhost'
 Then run these commands.
+
 ```sh
 sudo mysql -u root
 ```
@@ -199,27 +203,28 @@ sudo service mysql restart
 ```
 
 If there is a issue like.ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
-### image16
+
+### image 16
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss16.png?raw=true)
 
 Then run this command :
 ```sh
 sudo mysql -u root -p
 ```
-### image17
+### image 17
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss17.png?raw=true)
 
 Then install Workbench from the store For GUI interface .
 Then Edit connection.
 
 
-### image18
+### image 18
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss18.png?raw=true)
 
-First in the password Store in keychain enter your root user password .
+First in password field enter your root user password .
 If there is a error like :
 
-### image19
+### image 19
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss19.png?raw=true)
 
 Then run this command :
@@ -233,15 +238,14 @@ Then press the test Connection button in footer
 There will be a success massage:
 
 
-### image20
+### image 20
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss20.png?raw=true)
 
-### Mysql Workbench
 
 [https://linuxhint.com/installing_mysql_workbench_ubuntu/](https://linuxhint.com/installing_mysql_workbench_ubuntu/)
 
 
-To install mysql Workbench:
+To install mysql Workbench using command:
 
 ```sh
 sudo snap install mysql-workbench-community
