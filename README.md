@@ -1,4 +1,8 @@
 # SET UP DOCUMENTATION
+
+* [MYSQL SETUP](#MYSQL-SETUP)
+
+
 ### ADOBE COLDFUSION INSTALLATION
 
 ### To install Coldfusion in Ubuntu first go to this site.
