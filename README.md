@@ -1,4 +1,5 @@
-# Adobe Coldfusion Installation
+# SET UP DOCUMENTATION
+### ADOBE COLDFUSION INSTALLATION
 
 ### To install Coldfusion in Ubuntu first go to this site.
 ### image 1
@@ -99,9 +100,9 @@ command:
 sudo chmod 777 wwwroot/
 ```
 
-# MySql & MsSql Setup 
+# MYSQL & MSSQL SETUP 
 
-###  MySQL Setup
+###  MYSQL SETUP
 
 You can follow this link or can follow the intructions mentioned below:
 [https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04)
@@ -251,7 +252,7 @@ To install mysql Workbench using command:
 sudo snap install mysql-workbench-community
 ```
 
-### MsSQL Setup
+### MSSQL SETUP
 
 By using official documentation of microsoft to install Mssql.
 
@@ -268,7 +269,7 @@ wget -qO- https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
 
 This command show response with OK.
 
-### image21
+### image 21
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss21.png?raw=true)
 
 Register the SQL Server Ubuntu repository:
@@ -278,7 +279,7 @@ sudo add-apt-repository "$(wget -qO- https://packages.microsoft.com/config/ubunt
 ```
 
 
-### image22
+### image 22
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss22.png?raw=true)
 
 Run the following commands to install SQL Server:
@@ -291,7 +292,7 @@ sudo apt-get install -y mssql-server
 ```
 
 
-### image23
+### image 23
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss23.png?raw=true)
 
 After the package installation finishes, add passwords.
@@ -299,7 +300,7 @@ After the package installation finishes, add passwords.
 sudo /opt/mssql/bin/mssql-conf setup
 ```
 
-### image24
+### image 24
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss24.png?raw=true)
 
 Add 2 for developer package.
@@ -310,10 +311,9 @@ Once the configuration is done, verify that the service is running:
 systemctl status mssql-server --no-pager
 ```
 
-### image25
+### image 25
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss25.png?raw=true)
 
-Install the SQL Server command-line tools
 
 To create a database, you need to connect with a tool 
 
@@ -326,7 +326,7 @@ sudo apt install curl
 ```
  
 
-### image26
+### image 26
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss26.png?raw=true)
 
 Import the public repository GPG keys.
@@ -335,7 +335,7 @@ curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
 ```
 
 
-### image27
+### image 27
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss27.png?raw=true)
 
 Register the Ubuntu repository.
@@ -353,7 +353,7 @@ sudo apt-get update
 sudo apt-get install mssql-tools unixodbc-dev
 ```
 
-### image28
+### image 28
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss28.png?raw=true)
 
 You can update to the latest version of mssql-tools using the following commands:
@@ -388,8 +388,6 @@ sqlcmd -S localhost -U sa -P '<YourPassword>'
 
 If error occurs then follow the link
 
-
-
 [https://hackthestuff.com/article/error-resolved-sqlcmd-command-not-found#:~:text=But%20instead%20of%20connecting%20with,check%20mssql%2Dtools%20is%20installed](https://hackthestuff.com/article/error-resolved-sqlcmd-command-not-found#:~:text=But%20instead%20of%20connecting%20with,check%20mssql%2Dtools%20is%20installed)
 
 
@@ -408,77 +406,9 @@ sudo ln -sfn /opt/mssql-tools/bin/sqlcmd /usr/bin/sqlcmd
 ```
 
 
-### Backup &  RESTORE DATABASE
+## After mssql/Mysql set up now Add data sources in the coldfusion Administrator
 
-### For Backup Database:
-
-
-Using this command:
-
-```sh
-sqlcmd -S localhost -U SA -Q "BACKUP DATABASE ncdev2 TO DISK = N'/var/opt/mssql/data/demodb.bak' WITH NOFORMAT, NOINIT, NAME = 'demodb-full', SKIP, NOREWIND, NOUNLOAD, STATS = 10"
-```
-
-
-```sh
-sqlcmd -S localhost -U SA -P 'Adobe@11'-Q "BACKUP DATABASE ncdev2 TO DISK = N'/var/opt/mssql/data/ncdev2.bak' WITH NOFORMAT, NOINIT, NAME = 'demodb-full', SKIP, NOREWIND, NOUNLOAD, STATS = 10"
-```
-### image29
-![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss29.png?raw=true)
-
-### For Restore Database:
-
-
-Using this command:
-
-```sh
-RESTORE DATABASE [db_name] FROM DISK = '/var/opt/mssql/data/demodb.bak'
-```
-
-```sh
-WITH RECOVERY
-```
-
-
-```sh
-GO
-```
-
-
-Reference
-
-[db_name] -> Is the database name.
-Demodb.bak -> Is the backup file name.
-
-### BACKUP AND RESTORE DATABASE IN UBUNTU 20.04
-
-### BACKUP:
-
-first you must be in the context of that database you want backup for
-
-```sh
-BACKUP DATABASE database_name TO DISK = N'/var/opt/mssql/data/file_name.bak' WITH NOFORMAT, NOINIT, NAME = 'demodb-full', SKIP, NOREWIND, NOUNLOAD, STATS = 10
-```
-
-### RESTORE:
-
-```sh
-USE master
-```
-
-```sh
-RESTORE DATABASE ncdev2_backfile FROM  DISK = N'/var/opt/mssql/data/ncdev2backfile1.bak' WITH  FILE = 1, MOVE N'ncdev2' TO N'/var/opt/mssql/data/ncdev2_backfile.mdf', MOVE N'ncdev2_log' TO N'/var/opt/mssql/data/ncdev2_backfile_log.ldf', NOUNLOAD, REPLACE, STATS = 1
-```
-
-Database name = ncdev2_backfile
-bak file name = ncdev2backfile1.bak
-use (ncdev2_backfile.mdf) for ncdev2
-use (ncdev2_backfile_log.ldf) for ncdev2_log
-
-
-### After mssql/Mysql set up now Adding data sources in the Administrator
-
-### MSSQL SERVER
+### CREATE DATABASE AND ADD DATASOURCE FOR MSSQL SERVER
 
 first of all enter into mssql server using below command
 
@@ -486,13 +416,13 @@ first of all enter into mssql server using below command
 /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P "Adobe@11"
 ```
 
--u: use msSQL server username batana hai e.g: SA
+-u: use msSQL server username e.g: SA
 
 SELECT Name from sys.databases-p: use msSQL server password eg: "Adobe@11"
 
-
 symbol "1>" that confirms your presence in MS SQL Server
 
+### Create Database
 Commands:
 to create a new database
 
@@ -501,36 +431,38 @@ to create a new database
 CREATE DATABASE database_name;
 ```
 
-to shoe list all databases
+to show list all databases
 ```sh
 SELECT Name from sys.databases;
 ```
 
-next step is to connect datasource ko database in coldfusion administrator
+next step is to connect datasource to database in coldfusion administrator
 
-### image30
+### image 29
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss30.png?raw=true)
 
 Add data source name add select the database.
 Then press the add button.
-### image31
+
+### image 30
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss31.png?raw=true)
 
 
 
 Then add the database name .
 here add user name and password from msSQL server's credential
+
 i.e
 Database: new created databasename
 server:locahost
 Username: SA
 Password: Adobe@11 
 
-### image32
+### image 31
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss32.png?raw=true)
 
 
-### MYSQL SERVER
+### CREATE DATABASE AND ADD DATASOURCE FOR MYSQL SERVER
 
 open MySQL workbench 
 CREATE DATABASE database_name;
@@ -542,31 +474,31 @@ to create a new database
 CREATE DATABASE database_name;
 ```
 
-to shoe list all databases
+to show list all databases
 ```sh
 SELECT Name from sys.databases;
 ```
 
-next step is to connect datasource ko database in coldfusion administrator
-### image33
+next step is to connect datasource to database in coldfusion administrator
+### image 32
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss33.png?raw=true)
 
 select MySQL in Driver and click on add
-### image34
+### image 33
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss34.png?raw=true)
 
 complete all fields using username, severe, port from MySQL workbench
-### image35
+### image 34
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss35.png?raw=true)
  
 in work bench right click on user and then click on edit ,a dialog box will open from where you get all required details
-### image36
+### image 35
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss36.png?raw=true)
 
-Password : use password that was used to create Mysql setup 
+Password : use password that was used to create MYsql setup 
 
 ### ERROR BY YOUR LUCK 
-### image37
+### image 36
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss37.png?raw=true)
 
 Solution:
@@ -596,8 +528,74 @@ Command to move file:
 4) Restart ColdFusion 2021
 
 
+### BACKUP AND RESTORE DATABASE
 
-### LUCEE INSTALLATION
+### For Backup Database:
+
+Using command:
+
+```sh
+sqlcmd -S localhost -U SA -Q "BACKUP DATABASE ncdev2 TO DISK = N'/var/opt/mssql/data/demodb.bak' WITH NOFORMAT, NOINIT, NAME = 'demodb-full', SKIP, NOREWIND, NOUNLOAD, STATS = 10"
+```
+
+
+```sh
+sqlcmd -S localhost -U SA -P 'Adobe@11'-Q "BACKUP DATABASE ncdev2 TO DISK = N'/var/opt/mssql/data/ncdev2.bak' WITH NOFORMAT, NOINIT, NAME = 'demodb-full', SKIP, NOREWIND, NOUNLOAD, STATS = 10"
+```
+### image 37
+![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss29.png?raw=true)
+
+### To Restore Database:
+
+
+Using command:
+
+```sh
+RESTORE DATABASE [db_name] FROM DISK = '/var/opt/mssql/data/demodb.bak'
+```
+
+```sh
+WITH RECOVERY
+```
+
+
+```sh
+GO
+```
+
+
+Reference
+
+[db_name] -> database name.
+Demodb.bak -> backup file name.
+
+### BACKUP AND RESTORE DATABASE IN UBUNTU 20.04
+
+### For Backup Database:
+
+first you must be in the context of that database you want backup for
+
+```sh
+BACKUP DATABASE database_name TO DISK = N'/var/opt/mssql/data/file_name.bak' WITH NOFORMAT, NOINIT, NAME = 'demodb-full', SKIP, NOREWIND, NOUNLOAD, STATS = 10
+```
+
+### To Restore Database:
+
+```sh
+USE master
+```
+
+```sh
+RESTORE DATABASE ncdev2_backfile FROM  DISK = N'/var/opt/mssql/data/ncdev2backfile1.bak' WITH  FILE = 1, MOVE N'ncdev2' TO N'/var/opt/mssql/data/ncdev2_backfile.mdf', MOVE N'ncdev2_log' TO N'/var/opt/mssql/data/ncdev2_backfile_log.ldf', NOUNLOAD, REPLACE, STATS = 1
+```
+
+Database name = ncdev2_backfile
+bak file name = ncdev2backfile1.bak
+use (ncdev2_backfile.mdf) for ncdev2
+use (ncdev2_backfile_log.ldf) for ncdev2_log
+
+
+## LUCEE INSTALLATION
 
 Follow this link
 
@@ -609,7 +607,7 @@ Once you have Ubuntu up and running, you'll want to get it up to date with the f
 sudo apt update && sudo apt upgrade -y
 ```
 
-If you are interested in automatic updates for Ubuntu Server, you can use the following command to set that up.
+If you are interested in automatic updates for Ubuntu Server, you can use the following command for set up.
 
 ```sh
 sudo apt install unattended-upgrades
@@ -671,8 +669,9 @@ Here is a quick way to test out CF in the existing webroot.
 sudo touch /var/www/html/index.cfm
 echo "<cfscript>dump(server)</cfscript>" | sudo tee -a /var/www/html/index.cfm
 ```
+### ADD DATASOURCE ON LUCEE SERVER
 
-Now create datasource on lucee server
+Now add datasource on lucee server
 
 
 After this run index.cfm that is on root  [http://localhost:8888/](http://localhost:8888/)
@@ -691,11 +690,10 @@ cd /path/to/my/files
 chown -R $USER:$USER 
 ```
 
+### COMMANDS TO RUN COLDFUSION SERVER AND TO ENTER IN DATABASE USING TERMINAL:
 
-### COMMANDS TO RUN COLDFUSION SERVER AND TO ENTER IN DATABASE IN TERMINAL:
+commands:
 
-
-commands
 ### Start Coldfsuion
 ```sh
 cd /opt/ColdFusion2021/cfusion/bin
