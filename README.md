@@ -4,7 +4,6 @@
 
 [https://helpx.adobe.com/coldfusion/kb/coldfusion-downloads.html](https://helpx.adobe.com/coldfusion/kb/coldfusion-downloads.html)
 
-### image1
 	
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss1.png?raw=true)
 
@@ -18,11 +17,10 @@ And then click on the blue download button
 
 Then logged In (using google or create a new account).
 
-Then download the new package by filling the form at the last of the form select 
+Then download the new package by filling the form and at the last of the form select 
 ```sh
 linux - GUI | English | 1.57GB
 ```
-### image2
 
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss2.png?raw=true)
 
@@ -36,32 +34,26 @@ chmod +x ColdFusion_2023_GUI_WWEJ_linux64.bin
 ```
 
 Then the dialog box will open.
+select options as mentioned in images
 
-### image3
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss3.png?raw=true)
 
 select 30-day trial option
 
 
-### image4
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss4.png?raw=true)
 
 OR
 
-### image5
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss5.png?raw=true)
 
 
-### image6
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss6.png?raw=true)
 
-### image7
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss7.png?raw=true)
 
-### image8
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss8.png?raw=true)
 
-### image9
 ![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/ss9.png?raw=true)
 
 Password : Adobe@11
