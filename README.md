@@ -19,7 +19,7 @@
 [https://helpx.adobe.com/coldfusion/kb/coldfusion-downloads.html](https://helpx.adobe.com/coldfusion/kb/coldfusion-downloads.html)
 
 	
-![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_…on/blob/development/setup_images/ss1.png?raw=true)
+![alt text](https://github.com/faheemmalik11/Adobe_Coldfusion_Installation/blob/development/setup_images/ss1.png?raw=true)
 
 test
 
